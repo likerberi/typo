@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const name = "이병용";
-const age = "31";
-const gender = "male";
-const printFunc = (name, age, gender) => {
-    console.log('Hello ${이병용}, ${age}_${gender}!');
+const person = {
+    name: "CHOI",
+    age: 30,
+    gend: "male",
 };
-printFunc("testName", age, gender);
+const printFunc = (person) => {
+    return `${person.name}, you are ${person.age}, and ${person.gend}`;
+};
+console.log(printFunc(person));
 //# sourceMappingURL=index.js.map

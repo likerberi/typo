@@ -1,13 +1,19 @@
-
-
-const name="이병용";
-const age="31";
-const gender="male";
-
-const printFunc = (name, age, gender) => {
-	console.log('Hello ${이병용}, ${age}_${gender}!');
+interface Human {
+	name: string;
+	age : number;
+	gend: string;
 }
 
-printFunc("testName", age, gender);
+const person = {
+	name: "CHOI",
+	age : 30,
+	gend: "male",
+};
+
+const printFunc = (person: Human) => {
+	return `${person.name}, you are ${person.age}, and ${person.gend}`;
+}
+
+console.log(printFunc(person))
 
 export {};
