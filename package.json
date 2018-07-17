@@ -1,0 +1,14 @@
+{
+  "name": "type",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/likerberi/typo.git",
+  "author": "stepbystep <likerberi97@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
+  },
+  "devDependencies": {
+    "tsc-watch": "^1.0.22"
+  }
+}
